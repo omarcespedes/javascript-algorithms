@@ -1,10 +1,4 @@
-
-class Node {
-    constructor(val) {
-        this.val = val;
-        this.next = null;
-    }
-}
+import Node from '../list-node/Node';
 
 class LinkedList {
     constructor() {
@@ -152,6 +146,11 @@ class LinkedList {
             arr.push(current.val);
             current = current.next;
         }
-        console.log(arr.join(' -> '))
+
+        var list = arr.join(' -> ');
+        console.log(list)
+        return list;
     }
 }
+
+export default LinkedList;
